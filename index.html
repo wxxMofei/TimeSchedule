@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>时间排班表</title>
+		<link rel="stylesheet" href="css/theme.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.time-schedule.js"></script>
+	</head>
+
+	<body>
+		<div id="ceshi" class="times"></div>
+		<script>
+			var dataNum = [{
+				cfmd: [{
+					startTime: "2016-11-01",
+					endTime: "2016-12-06"
+				}, {
+					startTime: "2016-12-16",
+					endTime: "2016-12-21"
+				}]
+			}, {
+				cfmd: [{
+					startTime: "2016-12-03",
+					endTime: "2016-12-06"
+				}, {
+					startTime: "2016-12-21",
+					endTime: "2016-12-23"
+				}]
+			}];
+			$("#ceshi").timeSchedule({
+				data: dataNum
+			});
+		</script>
+	</body>
+
+</html>
