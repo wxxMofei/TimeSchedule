@@ -17,11 +17,13 @@
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
+	font-size: 0;
 }
 .numItems span{
-	float: left;
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 	width: 30px;
+	font-size: 16px;
 }
 .spanItems{
 	list-style: none;
@@ -35,4 +37,7 @@
 	height: 24px;
 	margin:3px;
 	background: #eeeeee;
+}
+#numItems,.spanItems{
+	text-align: center;
 }

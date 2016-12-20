@@ -29,7 +29,7 @@
 					$this.append("<div class='numItems' id='" + opts.numItemsDom + "'>" + strNum + "</div>");
 				}
 				//添加标题
-				$("#monthNUm").text(opts.defaultMonth);
+				$("#monthNUm").text(opts.defaultYear+" "+opts.defaultMonth);
 				var strItemsUl = "<ul class='spanItems'></ul>";
 				$this.append(strItemsUl);
 
@@ -47,7 +47,7 @@
 						opts.defaultYear = opts.defaultYear - 1;
 					}
 					dayNumber = DayNumOfMonth(opts.defaultYear, opts.defaultMonth-1);
-					$("#monthNUm").text(opts.defaultMonth);
+					$("#monthNUm").text(opts.defaultYear+" "+opts.defaultMonth);
 					strNum = "";
 					for(i = 1; i < dayNumber + 1; i++) {
 						strNum = strNum + "<span>" + i + "</span>";
@@ -68,7 +68,7 @@
 						opts.defaultYear = opts.defaultYear + 1;
 					}
 					dayNumber = DayNumOfMonth(opts.defaultYear, opts.defaultMonth-1);
-					$("#monthNUm").text(opts.defaultMonth);
+					$("#monthNUm").text(opts.defaultYear+" "+opts.defaultMonth);
 					strNum = "";
 					for(i = 1; i < dayNumber + 1; i++) {
 						strNum = strNum + "<span>" + i + "</span>";
