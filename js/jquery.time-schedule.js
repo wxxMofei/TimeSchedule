@@ -135,12 +135,12 @@
 		//console.log(data[0].cfmd);
 		for(i = 0; i < data.length; i++) {
 			for(j = 0; j < data[i].cfmd.length; j++) {
-				for(z = 1; z < dayNumber; z++) {
+				for(z = 1; z < dayNumber+1; z++) {
 					var biDate = Year + "-" + Month + "-" + z;
 					var isDateC = compareDay(biDate, data[i].cfmd[j].startTime, data[i].cfmd[j].endTime);
 					//console.log(isDateC);
 					if(isDateC) {
-						object.find(".spanItems").children("li").eq(i).children("span").eq(z).css("background", applyColor);
+						object.find(".spanItems").children("li").eq(i).children("span").eq(z-1).css("background", applyColor);
 					}
 				}
 			}
